@@ -1,0 +1,38 @@
+# Create Item
+
+# mutation {
+# 	createItem(id:0, name:"bob's toy") {
+#     id, name
+#   }
+# }
+
+
+# Update Item 
+
+# mutation {
+#   updateItem(id:0, newName: "rob's toy") {
+#     id, name
+#   }
+# }
+
+
+# Delete Item
+
+# mutation {
+# 	deleteItem(id:0) 
+# }
+
+
+# Query Item by id
+
+# specify id to query in variables section
+# {
+#   "id": 0
+# }
+
+# query GetItem($id: Int!){
+#   getItemById(id: $id){
+#     id,
+#     name
+#   }
+# }
