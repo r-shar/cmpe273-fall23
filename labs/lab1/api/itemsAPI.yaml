@@ -1,0 +1,28 @@
+openapi: 3.0.1
+info:
+  title: ItemsAPI
+  description: Simple API to get item details
+  version: '0.1'
+servers:
+  - url: http://127.0.0.1:8000
+paths:
+  /items/{item_id}:
+    get:
+      description: Returns itemId passed as path parameter.
+      parameters:
+        - name: item_id
+          in: path
+          schema:
+            type: int
+          required: true
+          description: Id of item to get
+      responses:
+        '200':
+          description: A JSON object containing itemId.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  item_id:
+                    type: string
