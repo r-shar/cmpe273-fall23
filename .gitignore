@@ -1,3 +1,4 @@
 /virtualenv
 /deactivate
-/venv 
+/venv
+.DS_Store 
